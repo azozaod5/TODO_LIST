@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body class="bg-orange-100 flex justify-center items-center h-screen">
+        <div>
+            <div class="text-center mb-5">
+                <h1 class="text-3xl font-bold">قائمة مهام</h1>
+            </div>
+        <div class="w-full mx-3">
+        <form class="flex justify-center" onsubmit="return false">
+          <button type="button" class="bg-orange-400 rounded-l-full px-5" onclick="AddElement()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+         </button>
+                <input type="text" id="AddText" class="px-5 py-2 shadow-2xl border text-right">
+                
+            </form>
+        
+        </div>
+    <div id="list" class=" w-8 h-8 text-right mb-2 pt-2">
+        
+    </div>
+</div>
+<script src="js.js"></script>
+    
+</body>
+</html>
